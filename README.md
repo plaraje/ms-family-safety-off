@@ -59,6 +59,23 @@ Displays:
 
 ---
 
+### Easy Online Alternative
+
+#### Disable
+```powershell
+Start-Process powershell -Verb RunAs -ArgumentList "-NoProfile -ExecutionPolicy Bypass -Command `"iwr https://raw.githubusercontent.com/plaraje/ms-family-safety-off/main/disable.ps1 -UseBasicParsing | iex | pause`""
+
+#### Enable
+```powershell
+Start-Process powershell -Verb RunAs -ArgumentList "-NoProfile -ExecutionPolicy Bypass -Command `"iwr https://raw.githubusercontent.com/plaraje/ms-family-safety-off/main/enable.ps1 -UseBasicParsing | iex | pause`""
+
+#### Get State
+```powershell
+Start-Process powershell -Verb RunAs -ArgumentList "-NoProfile -ExecutionPolicy Bypass -Command `"iwr https://raw.githubusercontent.com/plaraje/ms-family-safety-off/main/gtstate.ps1 -UseBasicParsing | iex | pause`""
+```
+
+---
+
 ## Features
 
 * Fully SYSTEM-compatible, works even when Administrator rights are insufficient.
